@@ -12,9 +12,6 @@ nltk.download('stopwords')
 
 tfidf = pickle.load(open('vectorizer.pkl', 'rb'))
 model = pickle.load(open('model.pkl', 'rb'))
-model = pickle.load(open('/content/drive/MyDrive/model.pkl','rb'))
-tfidf = pickle.load(open('/content/drive/MyDrive/vectorizer.pkl','rb'))
-
 def transform_text(text):
     text = text.lower()
     text = nltk.word_tokenize(text)
